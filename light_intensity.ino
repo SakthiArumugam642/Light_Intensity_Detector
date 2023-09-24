@@ -14,9 +14,9 @@ void loop() {
 
 int ldr = analogRead(sensorvalue);
 
-if (ldrStatus <= 257) { //treshold value i.e 257
+if (ldr <= 257) { //treshold value i.e 257
 
-digitalWrite(13, HIGH); sending pulse to turn on/off led
+digitalWrite(13, HIGH); //sending pulse to turn on/off led
 
 Serial.print("low intensity");
 
