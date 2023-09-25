@@ -20,7 +20,7 @@ digitalWrite(13, HIGH); //sending pulse to turn on/off led
 
 Serial.print("low intensity");
 
-Serial.println(ldr*5/1023); //printing the ldr value in the range of 0-1024
+Serial.println(ldr*5/1023); //printing the ldr value in the range of 0-5 V
 
 analogWrite(13, map(sensorvalue,0,1023,0,255)); // to adjust the brightness of led. 
 
